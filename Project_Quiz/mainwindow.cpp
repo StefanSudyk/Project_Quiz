@@ -6,9 +6,23 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    database db;
+    db.open();
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_plainTextEdit_textChanged()
+{
+
+}
+
+
+void MainWindow::on_pushButton_pressed()
+{
+
+}
+
